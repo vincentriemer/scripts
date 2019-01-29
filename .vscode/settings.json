@@ -1,0 +1,6 @@
+{
+  "typescript.validate.enable": true,
+  "javascript.validate.enable": true,
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true
+}

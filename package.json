@@ -1,0 +1,64 @@
+{
+  "name": "@vincentriemer/scripts",
+  "version": "1.0.1",
+  "license": "MIT",
+  "bin": {
+    "vincent-scripts": "./src/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js",
+    "lint": "eslint 'src/**/*.js'"
+  },
+  "dependencies": {
+    "@ampproject/rollup-plugin-closure-compiler": "^0.8.5",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.0",
+    "@babel/plugin-syntax-jsx": "^7.2.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.2.3",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/runtime": "^7.3.1",
+    "app-root-path": "^2.1.0",
+    "babel-preset-fbjs": "^3.1.2",
+    "chalk": "^2.4.2",
+    "cli-table": "^0.3.1",
+    "cli-truncate": "^1.1.0",
+    "filesize": "^4.0.0",
+    "gzip-size": "^5.0.0",
+    "handlebars": "^4.0.12",
+    "handlebars-utils": "^1.0.6",
+    "indent-string": "^3.2.0",
+    "invariant": "^2.2.4",
+    "jest-worker": "^24.0.0",
+    "lint-staged": "^8.1.0",
+    "listr": "^0.14.3",
+    "log-update": "^2.3.0",
+    "progress-estimator": "^0.2.2",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-replace": "^2.1.0",
+    "rollup-plugin-terser": "^4.0.2",
+    "shelljs": "^0.8.3",
+    "strip-ansi": "^5.0.0",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.1"
+  }
+}
